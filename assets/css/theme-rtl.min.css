@@ -20038,9 +20038,11 @@ ol, ul {
     box-shadow: 0 1.5625rem 2.8125rem rgba(66, 66, 66, 0.075);
     -webkit-transition: -webkit-box-shadow 0.4s ease;
     transition: -webkit-box-shadow 0.4s ease;
-    -o-transition: box-shadow 0.4s ease;
+    -o-transition: -webkit-box-shadow 0.4s ease;
     transition: box-shadow 0.4s ease;
-    transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease
+    transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
+    -moz-transition: -webkit-box-shadow 0.4s ease;
+    -ms-transition: -webkit-box-shadow 0.4s ease;
 }
 
 .shadow-warning {
